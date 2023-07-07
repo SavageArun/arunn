@@ -414,10 +414,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.addEventListener("DOMContentLoaded", function() {
             var whatsappLink = document.getElementById("whatsapp-link");
             whatsappLink.addEventListener("click", function() {
-                var phoneNumber = "+918510062945"; // Replace with the phone number you want to link the WhatsApp chat to
-                var message = "Hello Devloper!"; // Customize the default message
-                var encodedMessage = encodeURIComponent(message);
-                var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+                var phoneNumber = "+918510062945"; //  
+                var message = "Hello Developer!"; //  
+                var encodedMessage = encodeUIComponent(message);
+                var url= "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
                 window.open(url, "_blank");
             });
         });
