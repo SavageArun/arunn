@@ -361,22 +361,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5DSLMN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- End Googl<!DOCTYPEe Tag Manager (noscript) -->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" ></script>
-
-<script>
-// $(document).ready(function(){
-//	if (!Cookies.get('alert')) { 
-//	  $('.show-once').show(); 
-// 	  Cookies.set('alert', true, { expires: 1 });
-//	}
-// });
-// Documentation at https://github.com/js-cookie/js-cookie
-</script>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -414,15 +403,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.addEventListener("DOMContentLoaded", function() {
             var whatsappLink = document.getElementById("whatsapp-link");
             whatsappLink.addEventListener("click", function() {
-                var phoneNumber = "+918510062945"; //  
-                var message = "Hello Developer!"; //  
-                var encodedMessage = encodeUIComponent(message);
-                var url= "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+                var phoneNumber = "+918510062945"; 
+                var message = "Hello Developer, let's talk about a Project!"; 
+                var encodedMessage = encodeURIComponent(message);
+                var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
                 window.open(url, "_blank");
             });
         });
     </script>
 </body>
 </html>
+<!--// <script>
+// $(document).ready(function(){
+//	if (!Cookies.get('alert')) { 
+//	  $('.show-once').show(); 
+// 	  Cookies.set('alert', true, { expires: 1 });
+//	}
+// });
+// Documentation at https://github.com/js-cookie/js-cookie
+// </script> -->
+
+
 	
-</body></html>
+</body>
+</html>
